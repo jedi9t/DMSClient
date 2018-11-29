@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light">
+        <!-- Customize your theme here. -->
+
+    </style>
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CheckboxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+    </style>
+
+    <style name="radiobuttonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/radio_selector</item>
+    </style>
+    <style name="port_radiobuttonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/port_radio_selector</item>
+    </style>
+</resources>

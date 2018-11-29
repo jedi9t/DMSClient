@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.victgroup.signup.dmsclient"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 2
+        versionName "2.181116_1800"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation files('libs/android-support-v4.jar')
+    implementation files('libs/android-support-v7-appcompat.jar')
+    implementation files('libs/gson-1.7.1.jar')
+    implementation files('libs/mstar.jar')
+    implementation files('libs/org.eclipse.paho.client.mqttv3-1.0.2.jar')
+    implementation files('libs/philipstvsdk1.3_20171218.jar')
+    implementation files('libs/picasso-2.5.2.jar')
+    implementation files('libs/tbs_sdk_thirdapp_v3.6.0.1325_43613_sharewithdownload_withoutGame_obfs_20180807_151115.jar')
+    implementation files('libs/Volley.jar')
+    implementation files('libs/Zxing-core-3.2.0.jar')
+
+    implementation files('libs/apache-ant-1.8.2.jar')
+}
+configurations.all {
+    resolutionStrategy {
+        force 'com.android.support:support-v4:27.3.10'
+    }}

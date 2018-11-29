@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="tv_clock_id">502</integer>
+    <integer name="tv_widget_clock_id">503</integer>
+    <integer name="message_txt_id">500</integer>
+    <integer name="err_txt_id">501</integer>
+    <integer name="netClosed_txt_id">506</integer>
+    <integer name="setting_layout_id">504</integer>
+
+</resources>

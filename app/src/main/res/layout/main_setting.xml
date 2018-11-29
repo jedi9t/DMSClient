@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_setting"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/time"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <RadioGroup
+            android:id="@+id/rg_select_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                 style="@style/port_radiobuttonStyle"
+                 android:gravity="center"
+                 android:layout_marginBottom="10dp"
+                android:text="@string/cb_deviceinfo" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                 android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                 style="@style/port_radiobuttonStyle"
+                 android:gravity="center"
+                android:text="@string/cb_programlist" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                 style="@style/port_radiobuttonStyle"
+                 android:gravity="center"
+                  android:layout_marginTop="10dp"
+                android:text="@string/cb_systemsetting" />
+        </RadioGroup>
+
+        <ViewFlipper
+            android:id="@+id/vf_select_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ViewFlipper>
+    </LinearLayout>
+
+</LinearLayout>
